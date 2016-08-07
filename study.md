@@ -32,6 +32,9 @@ Rails.
 
 ```md
 <!-- your answer here -->
+Models are classes, they comunicate with databases, and store data.
+source: https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/
+
 ```
 
 ## Define Controller Responsiblities
@@ -41,6 +44,9 @@ in Rails.
 
 ```md
 <!-- your answer here -->
+The controlelrs gets user input,and other browser stuff such as cookies and data submissions and send it to the model.
+source: https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/
+
 ```
 
 ## Define Router Responsiblities
@@ -49,6 +55,9 @@ In your own words, define what the router does in Rails.
 
 ```md
 <!-- your answer here -->
+The router reads URLs and sends them to a controller.
+http://guides.rubyonrails.org/routing.html
+
 ```
 
 ## The Request-Response Cycle in Rails
@@ -58,4 +67,6 @@ the parts of Rails interact to produce and send a response.
 
 ```md
 <!-- your answer here -->
+The browser makes a request, the router recieves the request and sends it to the controller, the contoller recieves the request and sends it to the model, the model sends the request to the database.
+The database sends the info to the model, the model sends the info to the controller, the controller sends the info the router, and the router sends the info back to the user.
 ```
